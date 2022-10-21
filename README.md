@@ -3,7 +3,7 @@
 ## [Description](#table-of-contents)
 Text editor that runs in the browser, single-page application that meets PWA criteria.
 
-- [Walkthrough Video](./demo/Demo%20Video.webm4)
+[Walkthrough Video](./demo/Demo%20Video.webm4)
 
 ## Table of Contents
 * [Description](#description)
