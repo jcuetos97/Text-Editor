@@ -5,7 +5,8 @@ Text editor that runs in the browser, single-page application that meets PWA cri
 
 ![Demo](./demo/SS.png)
 
-- [Walkthrough Video](./demo/Demo%20Video.webm)
+[Walkthrough Video](./demo/Demo%20Video.webm4)
+
 
 ## Table of Contents
 * [Description](#description)
