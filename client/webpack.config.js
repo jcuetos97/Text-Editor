@@ -9,6 +9,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
+      
     },
     output: {
       filename: '[name].bundle.js',
@@ -22,8 +23,8 @@ module.exports = () => {
       }),
 
       new InjectManifest({
-        swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
       }),
 
       new WebpackPwaManifest({
@@ -33,7 +34,7 @@ module.exports = () => {
         display: 'standalone',
         background_color: '#1e1e1e',
 				theme_color: '#1e1e1e',
-        start_url: './',
+        start_url: '/',
         publicPath: '/',
         fingerprints: false,
         inject: true,
@@ -45,20 +46,17 @@ module.exports = () => {
           }
         ], 
       }),
-
-     
-
     ],
 
     module: {
       rules: [
         {
-          test: /\.css$/i,
+          test: /\.css$/,
           use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
             options: {
@@ -66,11 +64,11 @@ module.exports = () => {
               plugins: [
                 '@babel/plugin-proposal-object-rest-spread',
                 '@babel/transform-runtime',
-              ]
-            }
-          }
+              ],
+            },
+          },
         },
       ],
-    }
-  }
-}
+    },
+  };
+};
