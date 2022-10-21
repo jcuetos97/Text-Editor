@@ -3,10 +3,7 @@
 ## [Description](#table-of-contents)
 Text editor that runs in the browser, single-page application that meets PWA criteria.
 
-
-![Demo](./public/assets/SS.png)
-- [Walkthrough Video Part 1](./public/assets/Walkthrough%20Video%20Part%20I.mp4)
-- [Walkthrough Video Part 2](./public/assets/Walkthrough%20Video%20Part%20II.mp4)
+- [Walkthrough Video](./demo/Demo%20Video.webm4)
 
 ## Table of Contents
 * [Description](#description)
@@ -18,37 +15,13 @@ Text editor that runs in the browser, single-page application that meets PWA cri
 
 ## [Installation](#table-of-contents)
 
-- Download or clone repository to use this application on local machine.
-- `Node.js` and `MongoDB` is required to run the application
-- To install necessary dependencies, navigate to the root directory and run the following command: `npm install`
+- `git clone` the repo to your local machine. To use this application, run the `npm install` command to install the dependencies. 
+- Then run the following command: `npm run start:dev`.
 
 ## [Usage](#table-of-contents)
-- After installation, run `npm start`.
-- When the server is started, the Mongoose models are synched to the MongoDB database.
-- Open MongoDB and connect to the MongoDB URI `mongodb://localhost:27017`. On the list of databases, select `socialnetDB` to see `thoughts` and `users` data.
-- To create seed data and test the API routes, use [Insomnia](https://insomnia.rest/download). 
-
-**USER**
-- `GET` All Users route: http://localhost:3001/api/users
-- `GET` User by Id: http://localhost:3001/api/users/:userId
-- `POST` Create User route: http://localhost:3001/api/users 
-- `PUT` Update User by Id route: http://localhost:3001/api/users/:userId
-- `DELETE` Delete User by Id route: http://localhost:3001/api/users/:userId
-
-**FRIENDS**
-- `POST` Add friend to user's friend list: http://localhost:3001/api/users/:userId/friends/friendId
-- `DELETE` Remove friend from a user's friend list: http://localhost:3001/api/users/:userId/friends/friendId
-
-**THOUGHTS**
-- `GET` All Thoughts: http://localhost:3001/api/thoughts
-- `GET` Thought by Id: http://localhost:3001/api/thoughts/:thoughtId
-- `POST` Create Thought: http://localhost:3001/api/thought 
-- `PUT` Update Thought by Id: http://localhost:3001/api/thoughts/:thoughtId
-- `DELETE` Delete Thought by Id: http://localhost:3001/api/thoughts/:thoughtId
-
-**REACTIONS**
-- `POST` Create Reaction: http://localhost:3001/api/thoughts/:thoughtId/reactions
-- `DELETE` Remove Reaction: http://localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId
+- Type the following command in your termimal: `npm run start`.
+- Then open your browser and type on the search bar http://localhost:3000/ to run this application.
+- You can as well use [Insomnia](https://insomnia.rest/download) to test the app. 
 
 ## [License](#table-of-contents)
 
